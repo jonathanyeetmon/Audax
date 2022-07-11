@@ -1,0 +1,3 @@
+#Slow
+#Ineffecient
+#Error Prone
