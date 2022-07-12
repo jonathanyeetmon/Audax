@@ -20,12 +20,12 @@ address constant owner2 = 0xE016DB553a6b2655b32B8D65489d836fe64E789B;
     } 
 
     function addProperties() public {
-        rd.NewProperty("44850 Lafayette Dr",owner1);
-        rd.NewProperty("44855 Lafayette Dr",owner2);
+        rd.NewProperty("ADDRESS",owner1);
+        rd.NewProperty("ADDRESS",owner2);
     }
 
     function startSale() public {        
-        string memory propAddr = "44850 Lafayette Dr";
+        string memory propAddr = "ADDRESS";
         SaleDeed saleDeed = new SaleDeed(owner2,rd.LookupProperty(propAddr));
         saleDeed.sell();
     }
